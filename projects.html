@@ -1,0 +1,210 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Projects — Syed Shahriar Mustafa</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+<link rel="stylesheet" href="style.css"></link>
+</head>
+<body>
+
+<nav class="navbar navbar-expand-lg sticky-top">
+  <div class="container p-3">
+    <div class="logo">
+            <img src="logo.png" alt="Photo">
+          </div>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navMenu">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="navMenu">
+      <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+        <li class="nav-item"><a class="nav-link" href="index.html">About</a></li>
+        <li class="nav-item"><a class="nav-link" href="skills.html">Skills</a></li>
+        <li class="nav-item"><a class="nav-link" href="projects.html">Projects</a></li>
+        <li class="nav-item"><a class="nav-link" href="resume.html" >Resume </a></li>
+        <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<header class="container mt-5 mb-4">
+  <h1 class="name">Projects & Case Studies</h1>
+  <p class="muted">Below is a detailed case study of <strong>Poperl</strong> — a full project executed end-to-end by me — plus other completed and placeholder projects.</p>
+</header>
+
+<main class="container pb-5">
+
+  <!-- Poperl Deep Dive -->
+  <section class="card-glass p-4 mb-5">
+    <div class="row g-4">
+      <div class="col-lg-7">
+        <h2>Poperl — End-to-end product (Case study)</h2>
+        <p class="muted">Status: Completed (self-planned, developed, and launching). Poperl is a mobile-first product built with React Native (Expo) that uses a WebView to surface a responsive React.js storefront. Payments were integrated using ShurjoPay. The subscription flow was designed to confirm payment, update backend records (Firestore) and insert subscription documents into MongoDB. The app supports in-app navigation, and the flow redirects back to the React Native app after payment confirmation.</p>
+
+        <h5 class="mt-3">My role & responsibilities</h5>
+        <ul class="muted small">
+          <li>Idea, product planning, and user research (market fit for local micro-entrepreneurs).</li>
+          <li>UX/UI prototyping and responsive web design for the storefront (React.js).</li>
+          <li>Mobile app development with React Native (Expo) and a WebView integration for the storefront.</li>
+          <li>Payment integration using ShurjoPay and secure backend handling.</li>
+          <li>Backend design: Firestore for auth & session flow + MongoDB for subscriptions and analytics (integration).</li>
+          <li>Testing, bug-fixing, preparing launch builds, and publishing/releasing the product.</li>
+        </ul>
+
+        <h5 class="mt-3">Technical highlights</h5>
+        <div class="muted small">
+          <ul>
+            <li>Frontend: React.js (responsive storefront), Bootstrap + custom CSS, WebView integration inside React Native Expo.</li>
+            <li>Mobile: React Native (Expo), navigation, offline caching for orders, lightweight local DB.</li>
+            <li>Payments: ShurjoPay integration with secure callbacks and state verification.</li>
+            <li>Backend: Node/Express microservice to handle payment verification, update Firestore and insert into MongoDB 'subscriptions' collection.</li>
+            <li>DevOps: Build scripts for Expo, environment config, and CI hooks (placeholder).</li>
+          </ul>
+        </div>
+
+        <h5 class="mt-3">Key features</h5>
+        <div class="muted small">
+          <ul>
+            <li>User registration & profile management (Firebase Auth placeholder).</li>
+            <li>Subscription-based access to premium features via ShurjoPay.</li>
+            <li>Admin panel (web) for content & subscription management — placeholder for future expansion.</li>
+            <li>Analytics: simple usage logs and subscription metrics stored in MongoDB.</li>
+          </ul>
+        </div>
+
+        <h5 class="mt-3">Launch plan (short)</h5>
+        <ol class="muted small">
+          <li>Finalize UAT fixes & test payment flows in sandbox.</li>
+          <li>Prepare production build & app store listing (if publishing mobile build).</li>
+          <li>Soft launch with local users, collect feedback.</li>
+          <li>Iterate & scale payment subscriptions, add admin features.</li>
+        </ol>
+
+        <div class="mt-3">
+          <a class="btn btn-light me-2" href="#poperl-gallery">Open gallery</a>
+          <a class="btn btn-outline-light" href="#contact">Contact for demo</a>
+        </div>
+
+      </div>
+
+      <div class="col-lg-5">
+        <!-- Carousel for multiple Poperl images -->
+        <div id="poperl-gallery" class="carousel slide" data-bs-ride="carousel">
+          <div class="carousel-inner rounded-3 overflow-hidden" style="box-shadow:0 6px 30px rgba(0,0,0,0.5)">
+            <div class="carousel-item active">
+              <img src="https://via.placeholder.com/800x450?text=Poperl+Screenshot+1" class="d-block w-100" alt="Poperl 1">
+            </div>
+            <div class="carousel-item">
+              <img src="https://via.placeholder.com/800x450?text=Poperl+Screenshot+2" class="d-block w-100" alt="Poperl 2">
+            </div>
+            <div class="carousel-item">
+              <img src="https://via.placeholder.com/800x450?text=Poperl+Screenshot+3" class="d-block w-100" alt="Poperl 3">
+            </div>
+          </div>
+          <button class="carousel-control-prev" type="button" data-bs-target="#poperl-gallery" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+          </button>
+          <button class="carousel-control-next" type="button" data-bs-target="#poperl-gallery" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+          </button>
+        </div>
+
+        <div class="mt-3 card-glass p-3">
+          <h6>Project metadata</h6>
+          <div class="muted small">
+            <p><strong>Timeline:</strong> 3–4 months (idea → launch)</p>
+            <p><strong>Tech stack:</strong> React.js, React Native (Expo), Node/Express, Firestore, MongoDB, ShurjoPay</p>
+            <p><strong>Role:</strong> Product owner, developer, and maintainer</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Other completed projects -->
+  <section class="mb-4">
+    <h3>Other Projects</h3>
+    <div class="row g-4 mt-2">
+
+      <div class="col-md-6 col-lg-4">
+        <div class="skill-card p-3 h-100">
+          <img src="https://via.placeholder.com/600x360?text=Inventory+App" class="img-fluid rounded mb-3" alt="Inventory">
+          <h5>Inventory web app (Completed)</h5>
+          <p class="muted small">A CRUD app for a local shop to track stock and sales. Tech: React, Node, MongoDB. Role: Full-stack developer.</p>
+        </div>
+      </div>
+
+      <div class="col-md-6 col-lg-4">
+        <div class="skill-card p-3 h-100">
+          <img src="https://via.placeholder.com/600x360?text=College+Club+Site" class="img-fluid rounded mb-3" alt="Club">
+          <h5>College Club Website</h5>
+          <p class="muted small">Responsive site for events and signups. Tech: Bootstrap, JS. Role: Frontend lead.</p>
+        </div>
+      </div>
+
+      <div class="col-md-6 col-lg-4">
+        <div class="skill-card p-3 h-100">
+          <img src="https://via.placeholder.com/600x360?text=Mobile+Utility+App" class="img-fluid rounded mb-3" alt="Mobile">
+          <h5>Mobile Utility App (Prototype)</h5>
+          <p class="muted small">React Native prototype to help micro-entrepreneurs record orders. Role: Prototype developer.</p>
+        </div>
+      </div>
+
+      <!-- Placeholder grid to make page larger -->
+      <div class="col-12 mt-3">
+        <div class="card-glass p-3">
+          <h6>More projects (placeholders)</h6>
+          <div class="row g-3 mt-2">
+            <div class="col-md-4">
+              <div class="p-3 skill-card h-100">
+                <img src="https://via.placeholder.com/400x220?text=Project+X" class="img-fluid rounded mb-2">
+                <div class="muted small">Project X — short description (placeholder).</div>
+              </div>
+            </div>
+            <div class="col-md-4">
+              <div class="p-3 skill-card h-100">
+                <img src="https://via.placeholder.com/400x220?text=Project+Y" class="img-fluid rounded mb-2">
+                <div class="muted small">Project Y — short description (placeholder).</div>
+              </div>
+            </div>
+            <div class="col-md-4">
+              <div class="p-3 skill-card h-100">
+                <img src="https://via.placeholder.com/400x220?text=Project+Z" class="img-fluid rounded mb-2">
+                <div class="muted small">Project Z — short description (placeholder).</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- Contact / CTA -->
+  <section class="card-glass p-4 mt-4" id="contact">
+    <div class="row">
+      <div class="col-md-8">
+        <h4>Want to see a demo or collaborate?</h4>
+        <p class="muted small">If you'd like a walkthrough of Poperl or want to discuss a project, get in touch — I handle product design, development and deployment end-to-end.</p>
+      </div>
+      <div class="col-md-4 d-flex align-items-center justify-content-end">
+        <a class="btn btn-light" href="mailto:you@example.com">Request Demo</a>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<footer class="container text-center mt-5">
+  <div class="muted small">© <span id="year"></span> Syed Shahriar Mustafa — Projects</div>
+</footer>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+<script>document.getElementById('year').textContent = new Date().getFullYear();</script>
+</body>
+</html>

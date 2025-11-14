@@ -71,3 +71,144 @@
     .project-card{transition:transform .22s ease;}
     .project-card:hover{transform:translateY(-6px)}
     @media (max-width:767px){ .hero{padding:3rem 0} .name{font-size:1.5rem} }
+
+    
+    //skills
+    .page-header{padding:4rem 0 2rem 0; text-align:center;}
+.page-header h1{color:var(--accent); font-weight:700;}
+
+
+.skill-card{background:linear-gradient(180deg, rgba(255,255,255,0.03), rgba(255,255,255,0.02)); border:1px solid rgba(255,255,255,0.05); border-radius:1rem; padding:1.5rem; transition:transform .25s ease; box-shadow:0 6px 30px rgba(0,0,0,0.4);}
+.skill-card:hover{transform:translateY(-6px);}
+.skill-logo{width:60px; height:60px; border-radius:8px; background:#ffffff0d; display:flex; align-items:center; justify-content:center; border:1px solid rgba(255,255,255,0.06);}
+.skill-logo img{max-width:70%; opacity:0.9;}
+
+
+#poperl-gallery {
+  --shadow: 0 10px 40px rgba(2,6,23,0.55);
+}
+#poperl-gallery .carousel-inner {
+  border-radius: 0.75rem; /* matches site rounded corners */
+  overflow: hidden;
+  box-shadow: var(--shadow);
+  min-height: 240px;
+}
+#poperl-gallery .carousel-item img {
+  width: 100%;
+  height: 100%;
+  max-height: 480px;
+  object-fit: cover;
+  display: block;
+}
+
+/* Make carousel controls more visible on dark background */
+#poperl-gallery .carousel-control-prev-icon,
+#poperl-gallery .carousel-control-next-icon {
+  filter: drop-shadow(0 2px 4px rgba(0,0,0,0.6));
+  background-size: 2.2rem 2.2rem;
+}
+
+/* Project metadata card (right column) */
+.project-meta {
+  background: linear-gradient(180deg, rgba(255,255,255,0.02), rgba(255,255,255,0.01));
+  border: 1px solid rgba(255,255,255,0.04);
+  border-radius: 0.75rem;
+  padding: 1rem;
+  box-shadow: 0 6px 26px rgba(3,8,20,0.45);
+}
+.project-meta h6 { margin-bottom: .5rem; }
+.project-meta p { margin: .25rem 0; font-size: .95rem; color: #bcd0ea; }
+
+/* Project cards inside "Other Projects" */
+.project-list .skill-card,
+.placeholder-grid .skill-card {
+  padding: .9rem;
+  transition: transform .22s ease, box-shadow .22s ease;
+  border-radius: .75rem;
+}
+.project-list .skill-card:hover,
+.placeholder-grid .skill-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 10px 30px rgba(2,6,23,0.5);
+}
+.project-list .skill-card img,
+.placeholder-grid .skill-card img {
+  width: 100%;
+  height: auto;
+  border-radius: .5rem;
+  object-fit: cover;
+}
+
+/* Project metadata inline labels */
+.project-meta .label {
+  display: inline-block;
+  padding: 6px 10px;
+  margin-right: 6px;
+  border-radius: 999px;
+  font-size: 12px;
+  background: rgba(255,255,255,0.03);
+  border: 1px solid rgba(255,255,255,0.04);
+  color: #dbe9ff;
+}
+
+/* CTA / Request demo button container */
+.project-cta {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+}
+@media (max-width: 767px) {
+  .project-cta { flex-direction: column; align-items: stretch; }
+}
+
+/* Gallery thumbnails area (if you later add thumbnails) */
+.poperl-thumbs {
+  display: flex;
+  gap: .6rem;
+  margin-top: .75rem;
+  flex-wrap: wrap;
+}
+.poperl-thumbs img {
+  width: calc((100% / 4) - .45rem);
+  max-width: 110px;
+  height: 62px;
+  object-fit: cover;
+  border-radius: 6px;
+  border: 1px solid rgba(255,255,255,0.04);
+  cursor: pointer;
+  opacity: .95;
+  transition: transform .16s ease, opacity .16s ease;
+}
+.poperl-thumbs img:hover { transform: translateY(-4px); opacity: 1; }
+
+/* Larger placeholder grid spacing */
+.placeholder-grid .skill-card { min-height: 140px; }
+
+/* Tiny typography helpers for case study lists */
+.case-study-list { margin-left: 1rem; color: #b9d0f3; }
+.case-study-list li { margin-bottom: .35rem; }
+
+/* Accessibility: focus outlines for interactive elements inside projects */
+.project-list a:focus,
+.project-list button:focus,
+#poperl-gallery .carousel-control-prev:focus,
+#poperl-gallery .carousel-control-next:focus {
+  outline: 3px solid rgba(124,92,255,0.18);
+  outline-offset: 3px;
+}
+
+/* Final responsive tweak for carousel height on very small screens */
+@media (max-width: 420px) {
+  #poperl-gallery .carousel-item img { max-height: 260px; }
+}
+
+
+
+//resume page
+section#resume{
+    iframe{
+        width: 100%;
+        height: 500px;
+    }
+}
