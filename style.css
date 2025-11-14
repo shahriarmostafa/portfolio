@@ -1,0 +1,115 @@
+:root {
+  --accent:#7c5cff;
+  --accent-2:#00c2a8;
+  --bg:#0f1724;
+  --card:#0b1220;
+}
+
+html, body {
+  background: linear-gradient(180deg, #071028 0%, #081428 40%, #071022 100%);
+  color: #e6eef8;
+  font-family: Inter, system-ui, Segoe UI, Helvetica, Arial;
+}
+
+.navbar {
+  -webkit-backdrop-filter: blur(6px);
+          backdrop-filter: blur(6px);
+  background: rgba(10, 14, 24, 0.45);
+  color: #fff;
+}
+.navbar .logo {
+  width: 250px;
+}
+.navbar .logo img {
+  width: 100%;
+}
+.navbar ul li a {
+  color: #fff;
+  font-size: 16px;
+}
+.navbar ul li a:hover {
+  color: var(--accent);
+}
+
+.hero {
+  padding: 6rem 0;
+}
+.hero .profile-image {
+  min-width: 160px;
+  max-width: 160px;
+  height: 160px;
+  overflow: hidden;
+  border-radius: 50%;
+}
+.hero .profile-image img {
+  width: 100%;
+}
+
+.name {
+  font-size: 2.25rem;
+  font-weight: 700;
+  letter-spacing: -0.5px;
+  color: var(--accent);
+}
+
+.subtitle {
+  color: #c9d6ea;
+  opacity: 0.9;
+}
+
+.card-glass {
+  background: linear-gradient(180deg, rgba(255, 255, 255, 0.03), rgba(255, 255, 255, 0.02));
+  border: 1px solid rgba(255, 255, 255, 0.04);
+  border-radius: 1rem;
+  box-shadow: 0 6px 30px rgba(2, 6, 23, 0.6);
+}
+
+.skill-pill {
+  display: inline-block;
+  margin: 6px 6px 6px 0;
+  padding: 6px 12px;
+  border-radius: 999px;
+  background: rgba(255, 255, 255, 0.03);
+  border: 1px solid rgba(255, 255, 255, 0.04);
+}
+
+.muted {
+  color: #9fb0d6;
+}
+
+.video-placeholder {
+  aspect-ratio: 16/9;
+  background: linear-gradient(90deg, rgba(124, 92, 255, 0.12), rgba(0, 194, 168, 0.06));
+  border-radius: 12px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #eaf6f2;
+  border: 1px dashed rgba(255, 255, 255, 0.06);
+}
+
+footer {
+  padding: 2.5rem 0;
+  color: #9fb0d6;
+}
+
+.big-section {
+  padding: 4rem 0;
+}
+
+.project-card {
+  transition: transform 0.22s ease;
+}
+
+.project-card:hover {
+  transform: translateY(-6px);
+}
+
+@media (max-width: 767px) {
+  .hero {
+    padding: 3rem 0;
+  }
+  .name {
+    font-size: 1.5rem;
+  }
+}/*# sourceMappingURL=style.css.map */
