@@ -32,7 +32,7 @@
 
 <header class="container mt-5 mb-4">
   <h1 class="name">Projects & Case Studies</h1>
-  <p class="muted">Below is a detailed case study of <strong>Poperl</strong> — a full project executed end-to-end by me — plus other completed and placeholder projects.</p>
+  <p class="muted">Below is a detailed case study of <strong>PoperL</strong> — a full project executed by me and other projects</p>
 </header>
 
 <main class="container pb-5">
@@ -41,10 +41,11 @@
   <section class="card-glass p-4 mb-5">
     <div class="row g-4">
       <div class="col-lg-7">
-        <h2>Poperl — End-to-end product (Case study)</h2>
-        <p class="muted">Status: Completed (self-planned, developed, and launching). Poperl is a mobile-first product built with React Native (Expo) that uses a WebView to surface a responsive React.js storefront. Payments were integrated using ShurjoPay. The subscription flow was designed to confirm payment, update backend records (Firestore) and insert subscription documents into MongoDB. The app supports in-app navigation, and the flow redirects back to the React Native app after payment confirmation.</p>
-
-        <h5 class="mt-3">My role & responsibilities</h5>
+        <h2>PoperL — End-to-end product (Case study)</h2>
+        <p class="muted"> Status: Completed (self-planned, developed, and launching). <br> 
+          PoperL is an on-demand tutoring platform designed to help students connect with teachers anytime they need support. What started as a simple idea slowly grew into a complete learning system — from building the first chat features, to integrating audio calls, a digital whiteboard, and real-time messaging. Step by step, PoperL evolved as I listened to students’ needs, tested new features, and improved the experience. Today, it offers instant help, seamless communication, and a smooth, modern interface that makes learning easier, faster, and more accessible for everyone.</p>
+        
+          <h5 class="mt-3">My role & responsibilities</h5>
         <ul class="muted small">
           <li>Idea, product planning, and user research (market fit for local micro-entrepreneurs).</li>
           <li>UX/UI prototyping and responsive web design for the storefront (React.js).</li>
@@ -66,26 +67,36 @@
         </div>
 
         <h5 class="mt-3">Key features</h5>
-        <div class="muted small">
-          <ul>
-            <li>User registration & profile management (Firebase Auth placeholder).</li>
-            <li>Subscription-based access to premium features via ShurjoPay.</li>
-            <li>Admin panel (web) for content & subscription management — placeholder for future expansion.</li>
-            <li>Analytics: simple usage logs and subscription metrics stored in MongoDB.</li>
-          </ul>
-        </div>
+<div class="muted small">
+  <ul>
+    <li>User authentication & profile management (Firebase Authentication + Firestore user profiles).</li>
+    <li>Real-time chat using Socket.io with messages and metadata stored in MongoDB (fast, cost-efficient). </li>
+    <li>Audio calling and interactive whiteboard powered by Agora (in-browser calls + teacher blackboard).</li>
+    <li>Media storage (images & voice messages) in Supabase, with planned automatic deletion tied to subscription lifecycle.</li>
+    <li>Subscription & payments integrated with ShurjoPay (React frontend + Node backend flow; sandbox tests available).</li>
+    <li>Teacher points, rating and like/dislike system — likes only by students; points update stored in `teacherCollection` (Firestore) and monthly earnings recorded in MongoDB.</li>
+    <li>Admin web panel for managing content, subscriptions, monthly payout calculations, and revenue history (backend does the heavy lifting to avoid client-side failures).</li>
+    <li>PWA front-end built with React + Vite (installable web app / wrapper-ready for React Native WebView).</li>
+    <li>Service-worker based call notifications: ringtone, auto-open chat on incoming call, and notification lifecycle handling.</li>
+  </ul>
+</div>
 
-        <h5 class="mt-3">Launch plan (short)</h5>
-        <ol class="muted small">
-          <li>Finalize UAT fixes & test payment flows in sandbox.</li>
-          <li>Prepare production build & app store listing (if publishing mobile build).</li>
-          <li>Soft launch with local users, collect feedback.</li>
-          <li>Iterate & scale payment subscriptions, add admin features.</li>
-        </ol>
+<h5 class="mt-3">Launch plan (short)</h5>
+<ol class="muted small">
+  <li>Finish remaining UAT fixes and end-to-end tests (auth, chat, calls, whiteboard, media upload/download).</li>
+  <li>Complete ShurjoPay integration and verify payment flows in sandbox (frontend + Node backend, webhook handling, subscription state sync).</li>
+  <li>Verify data flows & backup: confirm Firestore ↔ MongoDB sync points, Supabase retention policy, and automatic media deletion tied to subscription expiry.</li>
+  <li>Run security and compliance checks (Auth rules, Firestore rules, CORS, webhook validation, least-privilege service accounts).</li>
+  <li>Performance & load testing for Socket.io/Agora paths and DB-heavy flows (simulate concurrent calls/messages).</li>
+  <li>Prepare production build and configuration (env vars, secrets, monitoring/logging, and CI/CD deployment scripts). If you publish mobile builds later, prepare store assets then — initially focus on the web PWA experience.</li>
+  <li>Soft launch with a controlled local user group, collect feedback and crash/usage logs, and iterate quickly on UX and bugs.</li>
+  <li>Run the monthly payout job from backend, confirm reports stored in MongoDB, reset teacher points in Firestore, and publish the earnings page in admin.</li>
+  <li>Scale: enable analytics, set up alerts, roll out to wider audience and iterate on monetization & admin features.</li>
+</ol>
 
         <div class="mt-3">
           <a class="btn btn-light me-2" href="#poperl-gallery">Open gallery</a>
-          <a class="btn btn-outline-light" href="#contact">Contact for demo</a>
+          <a class="btn btn-outline-light" href="htts://www.poperl.com">Visit PoperL</a>
         </div>
 
       </div>
@@ -93,16 +104,31 @@
       <div class="col-lg-5">
         <!-- Carousel for multiple Poperl images -->
         <div id="poperl-gallery" class="carousel slide" data-bs-ride="carousel">
-          <div class="carousel-inner rounded-3 overflow-hidden" style="box-shadow:0 6px 30px rgba(0,0,0,0.5)">
+          <div class="carousel-inner rounded-3" style="box-shadow:0 6px 30px rgba(0,0,0,0.5)">
             <div class="carousel-item active">
-              <img src="https://via.placeholder.com/800x450?text=Poperl+Screenshot+1" class="d-block w-100" alt="Poperl 1">
+              <img src="screenshots/screenshot.jpeg" class="d-block w-100" alt="Poperl">
             </div>
             <div class="carousel-item">
-              <img src="https://via.placeholder.com/800x450?text=Poperl+Screenshot+2" class="d-block w-100" alt="Poperl 2">
+              <img src="screenshots/screenshot2.jpeg" class="d-block w-100" alt="Poperl 3">
             </div>
             <div class="carousel-item">
-              <img src="https://via.placeholder.com/800x450?text=Poperl+Screenshot+3" class="d-block w-100" alt="Poperl 3">
+              <img src="screenshots/screenshot3.png" class="d-block w-100" alt="Poperl 2">
             </div>
+            <div class="carousel-item">
+              <img src="screenshots/screenshotx.png" class="d-block w-100" alt="Poperl 3">
+            </div><div class="carousel-item">
+              <img src="screenshots/screenshot4.png" class="d-block w-100" alt="Poperl 2">
+            </div>
+            <div class="carousel-item">
+              <img src="screenshots/screenshot5.png" class="d-block w-100" alt="Poperl 3">
+            </div>
+            <div class="carousel-item">
+              <img src="screenshots/screenshot6.png" class="d-block w-100" alt="Poperl 2">
+            </div>
+            <div class="carousel-item">
+              <img src="screenshots/screenshot7.png" class="d-block w-100" alt="Poperl 3">
+            </div>
+            
           </div>
           <button class="carousel-control-prev" type="button" data-bs-target="#poperl-gallery" data-bs-slide="prev">
             <span class="carousel-control-prev-icon" aria-hidden="true"></span>
@@ -117,7 +143,7 @@
         <div class="mt-3 card-glass p-3">
           <h6>Project metadata</h6>
           <div class="muted small">
-            <p><strong>Timeline:</strong> 3–4 months (idea → launch)</p>
+            <p><strong>Timeline:</strong> 9–11 months (idea → launch)</p>
             <p><strong>Tech stack:</strong> React.js, React Native (Expo), Node/Express, Firestore, MongoDB, ShurjoPay</p>
             <p><strong>Role:</strong> Product owner, developer, and maintainer</p>
           </div>

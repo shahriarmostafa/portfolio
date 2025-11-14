@@ -14,7 +14,7 @@
          background:rgba(10,14,24,0.45);
          color: #fff;
          .logo{
-            width: 250px;
+            width: 180px;
             img{
                 width: 100%;
             }
@@ -33,7 +33,7 @@
          }
     }
     .hero{
-        padding:6rem 0;
+        padding:4rem 0;
         .profile-image{
             min-width: 160px;
             max-width: 160px;
@@ -54,7 +54,9 @@
     .subtitle{color:#c9d6ea; opacity:0.9}
     .card-glass{
         background:linear-gradient(180deg, rgba(255,255,255,0.03), rgba(255,255,255,0.02));
-         border:1px solid rgba(255,255,255,0.04); border-radius:1rem; box-shadow:0 6px 30px rgba(2,6,23,0.6);}
+        border:1px solid rgba(255,255,255,0.04); 
+        border-radius:1rem; 
+        box-shadow:0 6px 30px rgba(2,6,23,0.6);}
     .skill-pill{
         display:inline-block;
          margin:6px 6px 6px 0;
@@ -67,12 +69,19 @@
     .video-placeholder{aspect-ratio:16/9;
          background:linear-gradient(90deg, rgba(124,92,255,0.12),rgba(0,194,168,0.06)); border-radius:12px; display:flex; align-items:center; justify-content:center; color:#eaf6f2; border:1px dashed rgba(255,255,255,0.06)}
     footer{padding:2.5rem 0; color:#9fb0d6}
-    .big-section{padding:4rem 0}
+    .big-section{padding:3rem 0}
     .project-card{transition:transform .22s ease;}
     .project-card:hover{transform:translateY(-6px)}
     @media (max-width:767px){ .hero{padding:3rem 0} .name{font-size:1.5rem} }
 
-    
+    // section#contact{
+    //     .card-glass{
+    //         height: 100%;
+    //     }
+    // }
+
+
+
     //skills
     .page-header{padding:4rem 0 2rem 0; text-align:center;}
 .page-header h1{color:var(--accent); font-weight:700;}
@@ -89,14 +98,15 @@
 }
 #poperl-gallery .carousel-inner {
   border-radius: 0.75rem; /* matches site rounded corners */
-  overflow: hidden;
+//   overflow: hidden;
   box-shadow: var(--shadow);
-  min-height: 240px;
+  height: auto;
+  width: 60%;
+  margin: auto;
 }
 #poperl-gallery .carousel-item img {
   width: 100%;
-  height: 100%;
-  max-height: 480px;
+  height: auto;
   object-fit: cover;
   display: block;
 }
@@ -209,6 +219,6 @@
 section#resume{
     iframe{
         width: 100%;
-        height: 500px;
+        height: 600px;
     }
 }
